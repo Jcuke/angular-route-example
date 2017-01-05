@@ -1,0 +1,27 @@
+{
+  "title":"这是一个测试",
+  "list":[{
+    "name": "tc",
+    "age": 0,
+    "address": "wumei",
+    "student": "2000"
+  },
+    {
+      "name": "tc",
+      "age": 0,
+      "address": "wumei",
+      "student": "2000"
+    }],
+  "slider":[{
+    "name": "1111",
+    "age": 0,
+    "address": "wumei",
+    "student": "2000"
+  },
+    {
+      "name": "2222",
+      "age": 0,
+      "address": "wumei",
+      "student": "2000"
+    }]
+}

@@ -1,0 +1,40 @@
+buildscript {
+	ext {
+		springBootVersion = '1.4.3.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+
+jar {
+	baseName = 'angular-route-example'
+	version = '0.0.1-SNAPSHOT'
+}
+
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+	compile('org.springframework.boot:spring-boot-starter-web')
+	runtime('org.springframework.boot:spring-boot-devtools')
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+
+	//Webjars
+	compile 'org.webjars:bootstrap:3.3.5'
+	compile 'org.webjars:jquery:2.1.4'
+	compile 'org.webjars:angularjs:1.4.6'
+	compile 'org.webjars.bower:oclazyload:1.0.6'
+	compile 'org.webjars.bower:angular-ui-router:0.2.15'
+}

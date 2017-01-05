@@ -1,0 +1,10 @@
+<div>
+    <p>
+        <input type="text" ng-model="test">
+    </p>
+    <div>
+        <p ng-repeat="x in names| filter:test | orderBy:'country'">
+            {{x.name + "," + x.country}}
+        </p>
+    </div>
+</div>
